@@ -1,11 +1,15 @@
 <template>
   <div class="home">
     <h1>{{ message }}</h1>
-    <button v-on:click="exercisesIndex()">Show Exercises</button>
+    <hr>
+    <!-- <button v-on:click="exercisesIndex()">Show Exercises</button> -->
     <div v-for="exercise in exercises">
       <h1>{{ exercise.name }}</h1>
       <h2>{{ exercise.focus }}</h2>
-      <h3>{{ exercise.image_url }}</h3>
+      <button v-on:click="exercisesShow()">Show Exercise</button>
+      <br>
+      <button v-on:click="exercisesIndex()">Add Exercise to Workout</button>
+      <!-- <h3>{{ exercise.image_url }}</h3> -->
       <hr>
     </div>
     
