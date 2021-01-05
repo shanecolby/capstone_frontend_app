@@ -3,9 +3,12 @@
     <h1>{{ message }}</h1>
     <hr>
     <!-- <button v-on:click="exercisesIndex()">Show Exercises</button> -->
+  
     <div v-for="exercise in exercises">
+   
       <h1>{{ exercise.name }}</h1>
       <h2>{{ exercise.focus }}</h2>
+      <p><img v-bind:src="exercise.image_url"></p>
       <button v-on:click="exercisesShow()">Show Exercise</button>
       <br>
       <button v-on:click="exercisesIndex()">Add Exercise to Workout</button>
