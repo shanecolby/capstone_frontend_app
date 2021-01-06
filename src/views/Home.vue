@@ -9,13 +9,15 @@
 
     <button v-on:click="createExercise()">Create exercise</button>
     <!-- <button v-on:click="exercisesIndex()">Show Exercises</button> -->
+    <h2>View/add exercise to workout</h2>
+    <!-- <button v-on:click="createWorkout()">View created workout</button> -->
   
     <div v-for="exercise in exercises">
    
       <h1>{{ exercise.name }}</h1>
       <h2>{{ exercise.focus }}</h2>
       <p><img v-bind:src="exercise.image_url" v-bind:alt="exercise.name"></p>
-      <button v-on:click="exercisesShow()">Show Exercise</button>
+      <!-- <button v-on:click="exercisesShow()">Show Exercise</button> -->
       <br>
       <button v-on:click="exercisesIndex()">Add Exercise to Workout</button>
       <!-- <h3>{{ exercise.image_url }}</h3> -->
@@ -59,12 +61,18 @@ export default {
       console.log("creating exercise...");
       var params = {
         name: this.name,
-        focus: "all",
-        image_url: "google",
+        focus: this.focus,
+        image_url: this.image_url,
       };
       axios.post("/api/exercises", params).then((response) => {
         console.log(response.data);
         this.exercises.push(response.data);
+      });
+    },
+    createWorkout: function () {
+      console.log("creating workout...");
+      axios.post("/api/selected_exercises").then((response) => {
+        console.log(response.data);
       });
     },
   },
