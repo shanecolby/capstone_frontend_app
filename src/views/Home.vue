@@ -3,6 +3,10 @@
     <h1>{{ message }}</h1>
     <hr>
     <h2>Create an exercise</h2>
+    <p>Exercise name:<input type="text" v-model="name"></p>
+    <p>Primary focus:<input type="text" v-model="focus"></p>
+    <p>Image URL:<input type="text" v-model="image_url"></p>
+
     <button v-on:click="createExercise()">Create exercise</button>
     <!-- <button v-on:click="exercisesIndex()">Show Exercises</button> -->
   
@@ -32,6 +36,9 @@ export default {
     return {
       message: "Welcome to WorkoutCaddy!",
       exercises: [],
+      name: "",
+      focus: "",
+      image_url: "",
     };
   },
   created: function () {
@@ -51,12 +58,13 @@ export default {
     createExercise: function () {
       console.log("creating exercise...");
       var params = {
-        name: "name",
+        name: this.name,
         focus: "all",
         image_url: "google",
       };
       axios.post("/api/exercises", params).then((response) => {
         console.log(response.data);
+        this.exercises.push(response.data);
       });
     },
   },
