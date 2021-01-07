@@ -9,20 +9,20 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <!-- <a class="nav-link" href="/create">Create Exercise</a> -->
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li v-if="!isLoggedIn()"><a class="dropdown-item" href="/signup">Signup</a></li>
+            <li v-if="!isLoggedIn()"><a class="dropdown-item" href="/login">Login</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li v-if="isLoggedIn()"><a class="dropdown-item" href="/logout">LOGOUT</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -44,8 +44,11 @@
       <router-link to="/logout">Logout</router-link>
       
     </div> -->
-    <h1>Is logged in?{{ isLoggedIn()}}</h1>
-    <router-view/>
+    <div class="container">
+      <h1>Is logged in?{{ isLoggedIn()}}</h1>
+      <h1>User Id? {{ getUserId() }} </h1>
+      <router-view/>
+    </div>
   </div>
 </template>
 
@@ -81,6 +84,10 @@ export default {
       } else {
         return false;
       }
+    },
+    getUserId: function () {
+      console.log("getting user id...");
+      return localStorage.getItem("user_id");
     },
   },
 };

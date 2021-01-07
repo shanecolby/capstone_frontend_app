@@ -7,8 +7,8 @@
     <p>Primary focus:<input type="text" v-model="focus"></p>
     <p>Image URL:<input type="text" v-model="image_url"></p>
 
-    <button v-on:click="createExercise()">Create exercise</button>
-    <!-- <button v-on:click="exercisesIndex()">Show Exercises</button> -->
+    <button v-on:click="createExercise()">Create exercise</button> -->
+    <!-- <button v-on:click="exercisesIndex()">Show Exercises</button>
     <h2>View/add exercise to workout</h2>
     <!-- <button v-on:click="createWorkout()">View created workout</button> -->
   
