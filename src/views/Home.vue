@@ -15,7 +15,7 @@
     <!-- <button v-on:click="createWorkout()">View created workout</button> -->
 <!--   
     <div v-for="exercise in exercises"> -->
-    <p>Search: <input type="text" v-model="searchTerm"> </p>
+    <p>Search Focus (arms,legs,chest,core,back): <input type="text" v-model="searchTerm"> </p>
     <div v-for="exercise in orderBy(filterBy(exercises, searchTerm, 'focus'), 'name')">
     <!-- <div v-for="exercise in orderBy(exercises, 'name')"> -->
 
@@ -28,6 +28,9 @@
       <br>
       <button v-on:click="exercisesIndex()">Add Exercise to Workout</button>
       <!-- <h3>{{ exercise.image_url }}</h3> -->
+      <br>
+      <button v-on:click="destroyExercise()">Remove Exercise</button>
+
       <hr>
     </div>
     
@@ -84,6 +87,16 @@ export default {
       axios.post("/api/selected_exercises").then((response) => {
         console.log(response.data);
       });
+    },
+    destroyExercise: function () {
+      console.log("removing exercise...");
+      axios
+        .delete("/api/exercises/" + this.currentExercise.id)
+        .then((response) => {
+          console.log(response.data);
+        });
+
+      // })
     },
   },
 };
