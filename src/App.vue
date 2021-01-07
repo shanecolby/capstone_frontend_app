@@ -12,12 +12,10 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <!-- <a class="nav-link" href="/create">Create Exercise</a> -->
+          <a class="nav-link" href="/exercises/new">Create Exercise</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li v-if="!isLoggedIn()"><a class="dropdown-item" href="/signup">Signup</a></li>
             <li v-if="!isLoggedIn()"><a class="dropdown-item" href="/login">Login</a></li>
@@ -26,7 +24,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
         </li>
       </ul>
       <form class="d-flex">

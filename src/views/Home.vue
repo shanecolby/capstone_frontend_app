@@ -1,13 +1,15 @@
 <template>
   <div class="home">
     <h1>{{ message }}</h1>
+    <h4> Select exercises below to create a workout </h4>
     <hr>
-    <h2>Create an exercise</h2>
+
+    <!-- <h2>Create an exercise</h2>
     <p>Exercise name:<input type="text" v-model="name"></p>
     <p>Primary focus:<input type="text" v-model="focus"></p>
     <p>Image URL:<input type="text" v-model="image_url"></p>
 
-    <button v-on:click="createExercise()">Create exercise</button> -->
+    <button v-on:click="createExercise()">Create exercise</button> --> 
     <!-- <button v-on:click="exercisesIndex()">Show Exercises</button>
     <h2>View/add exercise to workout</h2>
     <!-- <button v-on:click="createWorkout()">View created workout</button> -->
