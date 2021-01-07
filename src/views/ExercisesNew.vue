@@ -24,6 +24,7 @@ export default {
       focus: "",
       image_url: "",
     };
+    this.$router.push("/");
   },
   created: function () {},
   methods: {
@@ -35,8 +36,8 @@ export default {
         image_url: this.image_url,
       };
       axios.post("/api/exercises", params).then((response) => {
-        console.log(response.data);
-        this.exercises.push(response.data);
+        // console.log(response.data);
+        // this.exercises.push(response.data);
         this.$router.push("/");
       });
     },

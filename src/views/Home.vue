@@ -13,8 +13,13 @@
     <!-- <button v-on:click="exercisesIndex()">Show Exercises</button>
     <h2>View/add exercise to workout</h2>
     <!-- <button v-on:click="createWorkout()">View created workout</button> -->
-  
-    <div v-for="exercise in exercises">
+<!--   
+    <div v-for="exercise in exercises"> -->
+    <p>Search: <input type="text" v-model="searchTerm"> </p>
+    <div v-for="exercise in orderBy(filterBy(exercises, searchTerm, 'focus'), 'name')">
+    <!-- <div v-for="exercise in orderBy(exercises, 'name')"> -->
+
+
    
       <h1>{{ exercise.name }}</h1>
       <h2>{{ exercise.focus }}</h2>
@@ -34,12 +39,15 @@
 
 <script>
 import axios from "axios";
+import Vue2Filters from "vue2-filters";
 
 export default {
+  mixins: [Vue2Filters.mixin],
   data: function () {
     return {
       message: "Welcome to WorkoutCaddy!",
       exercises: [],
+      searchTerm: "",
       name: "",
       focus: "",
       image_url: "",
