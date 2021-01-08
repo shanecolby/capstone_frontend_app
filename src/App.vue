@@ -7,9 +7,8 @@
 				<!-- Intro -->
 					<div id="intro">
 						<h1>This is<br />
-						Massively</h1>
-						<p>A free, fully responsive HTML5 + CSS3 site template designed by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a><br />
-						and released for free under the <a href="https://html5up.net/license">Creative Commons license</a>.</p>
+						WorkoutCaddy</h1>
+						<!-- <p>View and select your favorite exercieses to make your personalized.</p> -->
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -23,8 +22,9 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">This is Massively</a></li>
-							<li><a href="generic.html">Generic Page</a></li>
+							<li class="active"><a href="/">Home</a></li>
+              <li><a href="/api/exercises">Create Exercise</a></li>
+							<!-- <li><a href="/selected_exercises">Created Workout</a></li> -->
 							<li><a href="elements.html">Elements Reference</a></li>
 						</ul>
 						<ul class="icons">
@@ -40,7 +40,7 @@
         <!-- Footer -->
 							<footer>
 								<div class="pagination">
-									<!--<a href="#" class="previous">Prev</a>-->
+									<a href="#" class="previous">Prev</a>
 									<a href="#" class="page active">1</a>
 									<a href="#" class="page">2</a>
 									<a href="#" class="page">3</a>
@@ -49,7 +49,7 @@
 									<a href="#" class="page">9</a>
 									<a href="#" class="page">10</a>
 									<a href="#" class="next">Next</a>
-								</div>
+								</div> 
 							</footer>
 
 				<!-- Footer -->
@@ -122,7 +122,7 @@
 }
 
 #nav {
-  padding: 30px;
+  padding: 10px;
 }
 
 #nav a {

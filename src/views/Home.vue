@@ -6,16 +6,12 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<span class="date">April 25, 2017</span>
-									<h2><a href="#">Welcome to<br />
-									WorkoutCaddy</a></h2>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
+									<!-- <span class="date">April 25, 2017</span> -->
+									<h2>View all of our community exercises below and select your favorites to create you own workout!</a></h2>
 								</header>
 								<a href="#" class="image main"><img src="images/mainpageworkoutpic.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="#" class="button large">Full Story</a></li>
+								<!-- <ul class="actions special">
+									<li><a href="#" class="button large">Full Story</a></li> -->
                   
 								</ul>
 							</article>
