@@ -7,7 +7,7 @@
 							<article class="post featured">
 								<header class="major">
 									<!-- <span class="date">April 25, 2017</span> -->
-									<h2>View all of our community exercises below and select your favorites to create you own workout!</a></h2>
+									<h3>View all of our community exercises below<br> and select your favorite exercises to create your own workout!</h3>
 								</header>
 								<a href="#" class="image main"><img src="images/mainpageworkoutpic.jpg" alt="" /></a>
 								<!-- <ul class="actions special">
@@ -15,6 +15,7 @@
                   
 								</ul>
 							</article>
+              
 
 						<!-- Posts -->
 							<section class="posts">

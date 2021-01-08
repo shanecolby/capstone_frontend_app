@@ -26,6 +26,9 @@
               <li><a href="/api/exercises">Create Exercise</a></li>
 							<!-- <li><a href="/selected_exercises">Created Workout</a></li> -->
 							<li><a href="elements.html">Elements Reference</a></li>
+              <li><a href="/signup">Signup</a></li>
+              <li><a href="/login">Login</a></li>
+              <li><a href="/logout">Logout</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
