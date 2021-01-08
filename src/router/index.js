@@ -5,7 +5,8 @@ import Home from '../views/Home.vue';
 import Signup from "../views/Signup.vue";
 import Login from "../views/Login.vue";
 import Logout from "../views/Logout.vue";
-import ExercisesNew from "../views/ExercisesNew.vue"
+import ExercisesNew from "../views/ExercisesNew.vue";
+import CreatedWorkout from "../views/CreatedWorkout"
 
 Vue.use(VueRouter)
 
@@ -34,6 +35,11 @@ const routes = [
     path: '/logout',
     name: 'Logout',
     component: Logout
+  },
+  {
+    path: '/createdworkout',
+    name: 'CreatedWorkout',
+    component: CreatedWorkout
   },
   // {
   //   path: '/workouts',

@@ -1,6 +1,11 @@
 <template>
   <div class="home">
     <h1>{{ message }}</h1>
+
+    <h1>User id? {{ $parent.getUserId() }}</h1>
+    <h1>User id of exercise? {{ $parent.getUserId() }}</h1>
+
+
     <h4> Select exercises below to create a workout </h4>
     <hr>
 
@@ -20,16 +25,20 @@
     <!-- <div v-for="exercise in orderBy(exercises, 'name')"> -->
 
 
-   
+      <h1>{{ exercise.id }}</h1>
       <h1>{{ exercise.name }}</h1>
       <h2>{{ exercise.focus }}</h2>
       <p><img v-bind:src="exercise.image_url" v-bind:alt="exercise.name"></p>
       <!-- <button v-on:click="exercisesShow()">Show Exercise</button> -->
       <br>
-      <button v-on:click="exercisesIndex()">Add Exercise to Workout</button>
+      <button v-on:click="addToWorkout(exercise.id)">Add Exercise to Workout</button>
       <!-- <h3>{{ exercise.image_url }}</h3> -->
       <br>
-      <button v-on:click="destroyExercise()">Remove Exercise</button>
+    
+<!--     
+      <p v-if="getUserId() === exercise.user_id">User should be able to edit this</p> -->
+      <!-- <router-link v-if="$parent.getUserId() == exercise.user_id" v-bind:to="`/exercises/${exercise.id}/delete`">Delete</router-link>
+      <button v-if="$parent.getUserId() == exercise.user_id" v-on:click="destroyExercise()">Remove Exercise</button> -->
 
       <hr>
     </div>
@@ -82,9 +91,14 @@ export default {
         this.exercises.push(response.data);
       });
     },
-    createWorkout: function () {
+    addToWorkout: function (workout_id) {
       console.log("creating workout...");
-      axios.post("/api/selected_exercises").then((response) => {
+      console.log(workout_id);
+
+      var params = {
+        exercise_id: workout_id,
+      };
+      axios.post("/api/selected_exercises", params).then((response) => {
         console.log(response.data);
       });
     },
