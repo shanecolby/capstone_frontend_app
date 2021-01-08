@@ -1,5 +1,46 @@
 <template>
   <div class="home">
+    <!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<span class="date">April 25, 2017</span>
+									<h2><a href="#">Welcome to<br />
+									WorkoutCaddy</a></h2>
+									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
+									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
+									amet nullam sed etiam veroeros.</p>
+								</header>
+								<a href="#" class="image main"><img src="images/mainpageworkoutpic.jpg" alt="" /></a>
+								<ul class="actions special">
+									<li><a href="#" class="button large">Full Story</a></li>
+                  
+								</ul>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article v-for="exercise in exercises">
+									<header>
+										<span class="date">{{exercise.id}}</span>
+										<h2><a href="#">{{exercise.name}}<br />{{exercise.focus}}</a></h2>
+									</header>
+									<a v-bind:href="'/selected_exercises'" class="image fit"><img v-bind:src="exercise.image_url" alt="" /></a>
+									<!-- <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p> -->
+									<!-- <ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li> -->
+                          <button v-on:click="addToWorkout(exercise.id)">Add Exercise to Workout</button>
+
+									<!-- </ul> -->
+								</article>
+							 
+							</section>
+
+						
+
+					</div>
     <h1>{{ message }}</h1>
 
     <h1>User id? {{ $parent.getUserId() }}</h1>
