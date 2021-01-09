@@ -38,14 +38,14 @@
 						
 
 					</div>
-    <h1>{{ message }}</h1>
+    <!-- <h1>{{ message }}</h1>
 
     <h1>User id? {{ $parent.getUserId() }}</h1>
     <h1>User id of exercise? {{ $parent.getUserId() }}</h1>
 
 
     <h4> Select exercises below to create a workout </h4>
-    <hr>
+    <hr> -->
 
     <!-- <h2>Create an exercise</h2>
     <p>Exercise name:<input type="text" v-model="name"></p>
@@ -58,20 +58,20 @@
     <!-- <button v-on:click="createWorkout()">View created workout</button> -->
 <!--   
     <div v-for="exercise in exercises"> -->
-    <p>Search Focus (arms,legs,chest,core,back): <input type="text" v-model="searchTerm"> </p>
-    <div v-for="exercise in orderBy(filterBy(exercises, searchTerm, 'focus'), 'name')">
+    <!-- <p>Search Focus (arms,legs,chest,core,back): <input type="text" v-model="searchTerm"> </p>
+    <div v-for="exercise in orderBy(filterBy(exercises, searchTerm, 'focus'), 'name')"> -->
     <!-- <div v-for="exercise in orderBy(exercises, 'name')"> -->
 
-
+<!-- 
       <h1>{{ exercise.id }}</h1>
       <h1>{{ exercise.name }}</h1>
       <h2>{{ exercise.focus }}</h2>
-      <p><img v-bind:src="exercise.image_url" v-bind:alt="exercise.name"></p>
+      <p><img v-bind:src="exercise.image_url" v-bind:alt="exercise.name"></p> -->
       <!-- <button v-on:click="exercisesShow()">Show Exercise</button> -->
-      <br>
-      <button v-on:click="addToWorkout(exercise.id)">Add Exercise to Workout</button>
+      <!-- <br> -->
+      <!-- <button v-on:click="addToWorkout(exercise.id)">Add Exercise to Workout</button> -->
       <!-- <h3>{{ exercise.image_url }}</h3> -->
-      <br>
+      <!-- <br> -->
     
 <!--     
       <p v-if="getUserId() === exercise.user_id">User should be able to edit this</p> -->

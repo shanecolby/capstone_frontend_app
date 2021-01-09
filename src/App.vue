@@ -23,26 +23,26 @@
 					<nav id="nav">
 						<ul class="links">
 							<li class="active"><a href="/">Home</a></li>
-              <li><a href="/api/exercises">Create Exercise</a></li>
-							<!-- <li><a href="/selected_exercises">Created Workout</a></li> -->
-							<li><a href="elements.html">Elements Reference</a></li>
+              <li><a href="/exercises/new">Create Exercise</a></li>
+							<li><a href="/createdworkout">Created Workout</a></li>
+							<!-- <li><a href="elements.html">Elements Reference</a></li> -->
               <li v-if="!isLoggedIn()"><a href="/signup">Signup</a></li>
               <li v-if="!isLoggedIn()"><a href="/login">Login</a></li>
               <li v-if="isLoggedIn()"><a href="/logout">LOGOUT</a></li>
 						</ul>
-						<ul class="icons">
+						<!-- <ul class="icons">
 							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
+						</ul> -->
 					</nav>
 
         <router-view />
 
         <!-- Footer -->
 							<footer>
-								<div class="pagination">
+								<!-- <div class="pagination">
 									<a href="#" class="previous">Prev</a>
 									<a href="#" class="page active">1</a>
 									<a href="#" class="page">2</a>
@@ -52,7 +52,7 @@
 									<a href="#" class="page">9</a>
 									<a href="#" class="page">10</a>
 									<a href="#" class="next">Next</a>
-								</div> 
+								</div>  -->
 							</footer>
 
 				<!-- Footer -->
@@ -78,7 +78,7 @@
 								</ul>
 							</form>
 						</section>
-						<section class="split contact">
+						<!-- <section class="split contact">
 							<section class="alt">
 								<h3>Address</h3>
 								<p>1234 Somewhere Road #87257<br />
@@ -101,7 +101,7 @@
 									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</section>
-						</section>
+						</section> -->
 					</footer>
 
 				<!-- Copyright -->
@@ -116,6 +116,7 @@
 </template>
 
 <style>
+/* exercise id color */
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -127,10 +128,10 @@
 #nav {
   padding: 10px;
 }
-
+/* app page color */
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: white;
 }
 
 #nav a.router-link-exact-active {
