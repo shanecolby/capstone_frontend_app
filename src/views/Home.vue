@@ -12,12 +12,17 @@
 								<a href="#" class="image main"><img src="images/mainpageworkoutpic.jpg" alt="" /></a>
 								<!-- <ul class="actions special">
 									<li><a href="#" class="button large">Full Story</a></li> -->  
-								</ul>
+								<!-- </ul> -->
+                <h3>Search Focus:<br> (Arms,Back,Chest,Core,Full Body,Legs)<input type="text" v-model="searchTerm"> </h3>
+                <!-- <div v-for="exercise in filterBy(exercises, searchTerm, 'focus')"></div> -->
+
+
+
 							</article>
               
 						<!-- Posts -->
 							<section class="posts">
-								<article v-for="exercise in exercises">
+								<article v-for="exercise in filterBy(exercises, searchTerm, 'focus')">
 									<header>
 										<span class="date">{{exercise.id}}</span>
 										<h3><a href="#">{{exercise.name}}<br />{{exercise.focus}}</a></h3>
@@ -26,6 +31,7 @@
 									<!-- <ul class="actions special">
 										<li><a href="#" class="button">Full Story</a></li> -->
                           <button v-on:click="addToWorkout(exercise.id)">Add Exercise to Workout</button>
+                          
                            <!-- <button v-on:click="destroyExercise(exercise.id)">Remove Exercise</button> -->
                       <!-- </ul> -->
 								</article>
