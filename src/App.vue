@@ -57,7 +57,7 @@
 							</footer>
 
 				<!-- Footer -->
-					<footer id="footer">
+					<!-- <footer id="footer">
 						<section>
 							<form method="post" action="#">
 								<div class="fields">
@@ -78,7 +78,7 @@
 									<li><input type="submit" value="Send Message" /></li>
 								</ul>
 							</form>
-						</section>
+						</section> -->
 						<!-- <section class="split contact">
 							<section class="alt">
 								<h3>Address</h3>
@@ -103,7 +103,7 @@
 								</ul>
 							</section>
 						</section> -->
-					</footer>
+					<!-- </footer> -->
 
 				<!-- Copyright -->
 					<div id="copyright">
