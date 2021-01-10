@@ -2208,8 +2208,8 @@ input, select, textarea {
 	input[type="button"],
 	button,
 	.button {
-		background-color: gray;
-		box-shadow: inset 0 0 0 2px #212931;
+		background-color: rgb(173, 150, 72);
+		box-shadow: inset 0 0 0 2px White;
 		color: White !important;
 	}
 
@@ -2218,7 +2218,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 2px #18bfef;
+			box-shadow: inset 0 0 0 4px #18bfef;
 			color: #18bfef !important;
 		}
 

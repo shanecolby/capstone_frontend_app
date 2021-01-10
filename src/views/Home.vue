@@ -25,9 +25,9 @@
 								<article v-for="exercise in filterBy(exercises, searchTerm, 'focus')">
 									<header>
 										<span class="date">{{exercise.id}}</span>
-										<h3><a href="#">{{exercise.name}}<br />{{exercise.focus}}</a></h3>
+										<h3>{{exercise.name}}<br />{{exercise.focus}}</a></h3>
 									</header>
-									<a v-bind:href="'/selected_exercises'" class="image fit"><img v-bind:src="exercise.image_url" alt="" /></a>
+									<a class="image fit"><img v-bind:src="exercise.image_url" alt="" /></a>
 									<!-- <ul class="actions special">
 										<li><a href="#" class="button">Full Story</a></li> -->
                           <button v-on:click="addToWorkout(exercise.id)">Add Exercise to Workout</button>
