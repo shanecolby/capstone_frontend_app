@@ -7,7 +7,7 @@
 							<article class="post featured">
 								<header class="major">
 									<!-- <span class="date">April 25, 2017</span> -->
-									<h3>View all of our community exercises below<br> and select your favorite exercises to create your own workout!</h3>
+									<h3>View all of our community exercises below</h3><h3>select your favorite exercises to create your own workout</h3>
 								</header>
 								<a href="#" class="image main"><img src="images/mainpageworkoutpic.jpg" alt="" /></a>
 								<!-- <ul class="actions special">
@@ -22,13 +22,15 @@
 								<article v-for="exercise in exercises">
 									<header>
 										<span class="date">{{exercise.id}}</span>
-										<h2><a href="#">{{exercise.name}}<br />{{exercise.focus}}</a></h2>
+										<h3><a href="#">{{exercise.name}}<br />{{exercise.focus}}</a></h3>
 									</header>
 									<a v-bind:href="'/selected_exercises'" class="image fit"><img v-bind:src="exercise.image_url" alt="" /></a>
 									<!-- <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p> -->
 									<!-- <ul class="actions special">
 										<li><a href="#" class="button">Full Story</a></li> -->
                           <button v-on:click="addToWorkout(exercise.id)">Add Exercise to Workout</button>
+                           <!-- <button v-on:click="destroyExercise(exercise.id)">Remove Exercise</button> -->
+                          
 
 									<!-- </ul> -->
 								</article>
@@ -73,9 +75,9 @@
       <!-- <h3>{{ exercise.image_url }}</h3> -->
       <!-- <br> -->
     
-<!--     
-      <p v-if="getUserId() === exercise.user_id">User should be able to edit this</p> -->
-      <!-- <router-link v-if="$parent.getUserId() == exercise.user_id" v-bind:to="`/exercises/${exercise.id}/delete`">Delete</router-link>
+    
+      <!-- <p v-if="getUserId() === exercise.user_id">User should be able to edit this</p>
+      <router-link v-if="$parent.getUserId() == exercise.user_id" v-bind:to="`/exercises/${exercise.id}/delete`">Delete</router-link>
       <button v-if="$parent.getUserId() == exercise.user_id" v-on:click="destroyExercise()">Remove Exercise</button> -->
 
       <hr>

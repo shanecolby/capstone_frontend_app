@@ -152,6 +152,7 @@ input, select, textarea {
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 2.375;
+		
 	}
 
 	a {
@@ -178,6 +179,7 @@ input, select, textarea {
 	p {
 		text-align: justify;
 		margin: 0 0 2rem 0;
+		color: white;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -305,8 +307,8 @@ input, select, textarea {
 		color: #212931;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
-		color: #212931;
+	h1, h2, h4, h5, h6 {
+		color: white;
 	}
 
 	blockquote {
