@@ -98,6 +98,8 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
+	
+/* background color */
 	body {
 		background-color: #1e252d;
 	}
@@ -2485,6 +2487,8 @@ input, select, textarea {
 	select,
 	textarea {
 		border-color: #eeeeee;
+		width: 65%;
+		margin: auto;
 	}
 
 		input[type="text"]:focus,

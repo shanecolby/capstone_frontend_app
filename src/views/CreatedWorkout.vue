@@ -1,6 +1,7 @@
 <template>
   <div class="CreatedWorkout">
     <h1>{{ message }}</h1>
+    <br>
     <div v-for="selected_exercise in selected_exercises">
       <h2>{{selected_exercise.exercise.name}}</h2>
       <h2>{{selected_exercise.exercise.focus}}</h2>

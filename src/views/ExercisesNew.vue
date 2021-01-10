@@ -1,9 +1,9 @@
 <template>
   <div class="create">
     <h1>{{ message }}</h1>
-    <h2>Exercise name:<input type="text" v-model="name"></h2>
-    <h2>Primary focus:<input type="text" v-model="focus"></h2>
-    <h2>Image URL:<input type="text" v-model="image_url"></h2>
+    <h4>Exercise name:<input type="text" v-model="name"></h4>
+    <h4>Primary focus:<input type="text" v-model="focus"></h4>
+    <h4>Image URL:<input type="text" v-model="image_url"></h4>
     
     <button v-on:click="createExercise()">Create exercise</button>
   

@@ -50,10 +50,10 @@
     <h2>View/add exercise to workout</h2>
     <!-- <button v-on:click="createWorkout()">View created workout</button> -->
 <!--   
-    <div v-for="exercise in exercises"> -->
-    <!-- <p>Search Focus (arms,legs,chest,core,back): <input type="text" v-model="searchTerm"> </p>
-    <div v-for="exercise in orderBy(filterBy(exercises, searchTerm, 'focus'), 'name')"> -->
-    <!-- <div v-for="exercise in orderBy(exercises, 'name')"> -->
+    <div v-for="exercise in exercises">
+    <p>Search Focus (arms,legs,chest,core,back): <input type="text" v-model="searchTerm"> </p>
+    <div v-for="exercise in orderBy(filterBy(exercises, searchTerm, 'focus'), 'name')">
+    <div v-for="exercise in orderBy(exercises, 'name')">
 
 <!-- 
       <h1>{{ exercise.id }}</h1>

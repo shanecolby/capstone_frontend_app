@@ -6,19 +6,19 @@
         <li class="text-danger" v-for="error in errors">{{ error }}</li>
       </ul>
       <div class="form-group">
-        <label>Name:</label> 
+        <h4>Name:</h4> 
         <input type="text" class="form-control" v-model="name">
       </div>
       <div class="form-group">
-        <label>Email:</label>
+        <h4>Email:</h4>
         <input type="email" class="form-control" v-model="email">
       </div>
       <div class="form-group">
-        <label>Password:</label>
+        <h4>Password:</h4>
         <input type="password" class="form-control" v-model="password">
       </div>
       <div class="form-group">
-        <label>Password confirmation:</label>
+        <h4>Password confirmation:</h4>
         <input type="password" class="form-control" v-model="passwordConfirmation">
       </div>
       <input type="submit" class="btn btn-primary" value="Submit">
