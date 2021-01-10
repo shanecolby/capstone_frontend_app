@@ -2,9 +2,9 @@
   <div class="CreatedWorkout">
     <h1>{{ message }}</h1>
     <div v-for="selected_exercise in selected_exercises">
-      <button v-on:click="destroyWorkout(selected_exercise)">Remove Exercise</button>
       <h2>{{selected_exercise.exercise.name}}</h2>
       <h2>{{selected_exercise.exercise.focus}}</h2>
+      <button v-on:click="destroyWorkout(selected_exercise)">Remove Exercise</button>
       <a class="image fit"><img v-bind:src="selected_exercise.exercise.image_url" alt="" /></a>
       <br>
 

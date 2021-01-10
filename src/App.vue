@@ -42,7 +42,7 @@
         <router-view />
 
         <!-- Footer -->
-							<footer>
+							<!-- <footer> -->
 								<!-- <div class="pagination">
 									<a href="#" class="previous">Prev</a>
 									<a href="#" class="page active">1</a>
@@ -54,7 +54,7 @@
 									<a href="#" class="page">10</a>
 									<a href="#" class="next">Next</a>
 								</div>  -->
-							</footer>
+							<!-- </footer> -->
 
 				<!-- Footer -->
 					<!-- <footer id="footer">
