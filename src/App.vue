@@ -8,6 +8,7 @@
 					<div id="intro">
 						<h1>This is<br />
 						WorkoutCaddy</h1>
+						<p>A quick and easy way to plan your workout</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>

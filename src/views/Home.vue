@@ -35,6 +35,7 @@
                            <!-- <button v-on:click="destroyExercise(exercise.id)">Remove Exercise</button> -->
                       <!-- </ul> -->
 								</article>
+        
 							</section>
           </div>
     <!-- <h1>{{ message }}</h1>
