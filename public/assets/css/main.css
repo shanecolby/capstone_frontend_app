@@ -2078,7 +2078,7 @@ input, select, textarea {
 		-ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		border: 0;
-		border-radius: 1.5rem;
+		border-radius: 1rem;
 		cursor: pointer;
 		display: inline-block;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -2343,7 +2343,7 @@ input, select, textarea {
 		-ms-appearance: none;
 		appearance: none;
 		background: transparent;
-		border-radius: 1.5rem;
+		border-radius: 1rem;
 		border: solid 2px;
 		color: white;
 		display: block;
@@ -3340,6 +3340,11 @@ input, select, textarea {
 			color: #ffffff;
 		}
 
+		#intro h7 {
+			color:rgb(173, 150, 72)
+
+		}
+
 		#intro blockquote {
 			border-left-color: #ffffff;
 		}
@@ -3655,6 +3660,7 @@ input, select, textarea {
 		#nav a {
 			color: #ffffff;
 			border-bottom-color: rgba(255, 255, 255, 0.5);
+
 		}
 
 			#nav a:hover {
