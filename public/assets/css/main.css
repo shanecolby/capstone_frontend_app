@@ -2078,11 +2078,11 @@ input, select, textarea {
 		-ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		border: 0;
-		border-radius: 0;
+		border-radius: 1.5rem;
 		cursor: pointer;
 		display: inline-block;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 0.8rem;
+		font-size: 1rem;
 		font-weight: 900;
 		letter-spacing: 0.075em;
 		height: 3rem;
@@ -2343,7 +2343,7 @@ input, select, textarea {
 		-ms-appearance: none;
 		appearance: none;
 		background: transparent;
-		border-radius: 0;
+		border-radius: 1rem;
 		border: solid 2px;
 		color: white;
 		display: block;
