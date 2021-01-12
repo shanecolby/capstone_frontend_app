@@ -105,7 +105,7 @@ export default {
   },
   created: function () {
     axios.get("/api/exercises").then((response) => {
-      console.log("exercise index...");
+      // console.log("exercise index...");
       this.exercises = response.data;
     });
   },
@@ -113,12 +113,12 @@ export default {
     exercisesIndex: function () {
       console.log("exercises index...");
       axios.get("/api/exercises").then((response) => {
-        console.log(response.data);
+        // console.log(response.data);
         this.exercises = response.data;
       });
     },
     createExercise: function () {
-      console.log("creating exercise...");
+      // console.log("creating exercise...");
       var params = {
         name: this.name,
         focus: this.focus,
@@ -130,14 +130,14 @@ export default {
       });
     },
     addToWorkout: function (workout_id) {
-      console.log("creating workout...");
+      // console.log("creating workout...");
       console.log(workout_id);
 
       var params = {
         exercise_id: workout_id,
       };
       axios.post("/api/selected_exercises", params).then((response) => {
-        console.log(response.data);
+        // console.log(response.data);
       });
     },
     destroyExercise: function () {
@@ -145,7 +145,7 @@ export default {
       axios
         .delete("/api/exercises/" + this.currentExercise.id)
         .then((response) => {
-          console.log(response.data);
+          // console.log(response.data);
         });
     },
   },

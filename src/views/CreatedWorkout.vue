@@ -40,20 +40,20 @@ export default {
   },
   created: function () {
     axios.get("/api/selected_exercises").then((response) => {
-      console.log("selected exercises...");
+      // console.log("selected exercises...");
       this.selected_exercises = response.data;
     });
   },
   methods: {
     createWorkout: function () {
-      console.log("user workout...");
+      // console.log("user workout...");
       axios.get("/api/selected_exercises").then((response) => {
         console.log(response.data);
         this.selected_exercises = response.data;
       });
     },
     destroyWorkout: function (selected_exercise) {
-      console.log("removing workout...");
+      // console.log("removing workout...");
       axios
         .delete("/api/selected_exercises/" + selected_exercise.id)
         .then((response) => {

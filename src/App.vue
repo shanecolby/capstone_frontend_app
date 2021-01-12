@@ -7,7 +7,7 @@
 				<!-- Intro -->
 					<div id="intro">
 						<h1>This is<br />
-						Workout<h7>Caddy</h7></h1>
+						Workout<span>Caddy</span></h1>
 						<p>A quick and easy way to plan your workout</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
@@ -15,9 +15,9 @@
 					</div>
 
 				<!-- Header -->
-					<header id="header">
+					<!-- <header id="header">
 						<a href="index.html" class="logo">Massively</a>
-					</header>
+					</header> -->
 
 				<!-- Nav -->
 					<nav id="nav">
@@ -151,7 +151,7 @@ export default {
       }
     },
     getUserId: function () {
-      console.log("getting user id...");
+      // console.log("getting user id...");
       return localStorage.getItem("user_id");
     },
   },

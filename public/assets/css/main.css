@@ -2627,6 +2627,7 @@ input, select, textarea {
 			display: block;
 			margin: 2.5rem 0;
 			width: 100%;
+			border-radius: 2rem;
 		}
 
 			.image.fit:first-child {
@@ -2641,6 +2642,7 @@ input, select, textarea {
 			display: block;
 			margin: 4rem 0;
 			width: 100%;
+			border-radius: 2rem;
 		}
 
 			.image.main:first-child {
@@ -3340,7 +3342,7 @@ input, select, textarea {
 			color: #ffffff;
 		}
 
-		#intro h7 {
+		#intro span {
 			color:rgb(173, 150, 72)
 
 		}

@@ -29,7 +29,7 @@ export default {
   created: function () {},
   methods: {
     createExercise: function () {
-      console.log("creating exercise...");
+      // console.log("creating exercise...");
       var params = {
         name: this.name,
         focus: this.focus,
