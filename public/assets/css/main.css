@@ -2343,7 +2343,7 @@ input, select, textarea {
 		-ms-appearance: none;
 		appearance: none;
 		background: transparent;
-		border-radius: 1rem;
+		border-radius: 1.5rem;
 		border: solid 2px;
 		color: white;
 		display: block;
