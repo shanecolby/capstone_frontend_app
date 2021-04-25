@@ -37,7 +37,7 @@ export default {
       };
       axios.post("/api/exercises", params).then((response) => {
         // console.log(response.data);
-        // this.exercises.push(response.data);
+        this.exercises.push(response.data);
         this.$router.push("/");
       });
     },
